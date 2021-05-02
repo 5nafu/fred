@@ -34,7 +34,6 @@ import freenet.client.DefaultMIMETypes;
 import freenet.node.NodeStarter;
 import freenet.support.LogThresholdCallback;
 import freenet.support.Logger;
-import freenet.support.SizeUtil;
 import freenet.support.StringValidityChecker;
 import freenet.support.Logger.LogLevel;
 
@@ -687,7 +686,6 @@ final public class FileUtil {
 			try {
 				System.out.println("Securely deleting "+file+" which is of length "+size+" bytes...");
 				raf = new RandomAccessFile(file, "rw");
-				long count;
 				// Random data first.
 				raf.seek(0);
 				fill(new RandomAccessFileOutputStream(raf), size);
@@ -845,6 +843,7 @@ final public class FileUtil {
 	}
 
 	/** @deprecated */
+	@Deprecated
     public static void fill(OutputStream os, Random random, long length) throws IOException {
         long moved = 0;
         byte[] buf = new byte[BUFFER_SIZE];

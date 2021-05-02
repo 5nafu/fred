@@ -33,8 +33,9 @@ public class OfficialPlugins {
 					.deprecated();
 			addPlugin("Freemail_wot")
 					.inGroup("communication")
+					.recommendedVersion(30)
 					.minimumVersion(27)
-					.loadedFrom("CHK@fR~OePzegkidZcKQN3aX-2EmS8RPo6Qj3hNTKf~BmJA,Mb7laJ5Mz0vvnEIhYr6yZbAytgdhQeXxJDA2LL0ziZU,AAMC--8/Freemail-v0.2.7.2.jar");
+					.loadedFrom("CHK@JxgNeddiKwFoOUzUgmKYHMPRM-n~E39DxfcAKVMNJkc,QCdAOXyTLnJOhXYuBkuIHK0fPGhjxnqlC-yN8I0BXOc,AAMC--8/Freemail.jar");
 			addPlugin("HelloWorld")
 					.inGroup("example")
 					.loadedFrom("CHK@ZdTXnWV-ikkt25-y8jmhlHjCY-nikDMQwcYlWHww5eg,Usq3uRHpHuIRmMRRlNQE7BNveO1NwNI7oNKdb7cowFM,AAIC--8/HelloWorld.jar")
@@ -50,9 +51,12 @@ public class OfficialPlugins {
 					.loadedFrom("CHK@Zgib8xrGxcEuix7AVB4eajton1FpNHbIJeQZgEbHMNU,BQekU261VLSDUBQPOHSMKUF5qxY1v0zjXa33RyoEbYk,AAMC--8/JSTUN.jar");
 			addPlugin("KeyUtils")
 					.inGroup("technical")
-					.minimumVersion(5026)
-					.loadedFrom("CHK@VGVmYp8qGseh2S7irYSDS7f6Goy0Z7rZcOc-iiQVPXg,Q4VeVf0fhdfejLqXrSYY5TK76f37D34Ly3Npv5X1GMA,AAMC--8/KeyUtils-v5026.jar")
+					.minimumVersion(5027)
+					.loadedFrom("CHK@EB2-RzJ~AgqJ3LhnXOdsHyXFmLfFvVVCek4SYmN58pk,SDDRbNWVfqOYokCKMOsnWkvHbMAfVt-qkbsLOzrP5zg,AAMC--8/freenet-KeyUtils.jar")
 					.advanced();
+			addPlugin("KeepAlive")
+					.inGroup("file-transfer")
+					.loadedFrom("CHK@bT1sdJ8VC0QT80kcefY95FYHEaqrHLlWVYgMX2bqeHg,AnvF8F7T9nJP8DY4snYsNJwz1np5JG73OaXeHJUqyZw,AAMC--8/plugin-KeepAlive.jar ");
 			addPlugin("MDNSDiscovery")
 					.inGroup("connectivity")
 					.minimumVersion(2)
@@ -74,10 +78,13 @@ public class OfficialPlugins {
 			addPlugin("UPnP")
 					.inGroup("connectivity")
 					.essential()
-                    .recommendedVersion(10007)
+					.recommendedVersion(10007)
 					.minimumVersion(10003)
-					.loadedFrom(
-                        "CHK@ZiX8yeMHTUtNfJAgxpwH~jLRnnbb41BKEkAxOD~33tY,aBTvD3IoPKPLjnHOCNQ4-iRwqVED5kHgkmD4UhGdITk,AAMC--8/UPnP-10007.jar");
+					.loadedFrom("CHK@ZiX8yeMHTUtNfJAgxpwH~jLRnnbb41BKEkAxOD~33tY,aBTvD3IoPKPLjnHOCNQ4-iRwqVED5kHgkmD4UhGdITk,AAMC--8/UPnP-10007.jar");
+			addPlugin("UPnP2")
+					.inGroup("connectivity")
+					.loadedFrom("CHK@oFNunyhic~ug3lWas8Jabpwbt3heHhrFzHswN~GhPNc,j~2AHw~ZyZGNMuqW3zmukTJHysDg5lBTvrySerSPxkI,AAMC--8/freenet-UPnP2.jar")
+					.advanced();
 			addPlugin("XMLLibrarian")
 					.inGroup("index")
 					.minimumVersion(26)
@@ -109,8 +116,9 @@ public class OfficialPlugins {
 			addPlugin("WebOfTrust")
 					.inGroup("communication")
 					.minimumVersion(18)
+					.recommendedVersion(20)
 					.usesXml()
-					.loadedFrom("CHK@qprIfrwqW0zg4izvRqStw0GUR2siJBe6LuDuy-t6D7A,eVd5fUG5nrNnIl7vwlRGzyhTe~TTZwuh6P1oqZH8g0A,AAMC--8/WebOfTrust-build0018.jar");
+					.loadedFrom("CHK@5c0yqhe9lcM~dXWeM5jZkZAeTpsAIxozHU5j1-BvhQY,7dwiZkEwyceOfDotFe4fDeySyXFQH990~AKySmDGGrI,AAMC--8/WebOfTrust-build0020.jar");
 			addPlugin("WebOfTrustTesting")
 					.inGroup("communication")
 					.advanced()
@@ -121,14 +129,14 @@ public class OfficialPlugins {
 					.loadedFrom("USK@QeTBVWTwBldfI-lrF~xf0nqFVDdQoSUghT~PvhyJ1NE,OjEywGD063La2H-IihD7iYtZm3rC0BP6UTvvwyF5Zh4,AQACAAE/WebOfTrustTesting.jar/17");
 			addPlugin("FlogHelper")
 					.inGroup("communication")
-					.minimumVersion(35)
+					.minimumVersion(36)
 					.usesXml()
-					.loadedFrom("CHK@3Ht6otYHogKxa1Z8SC0hz46kV9q1qaSBsjbJxuwPosU,txky3jF33oWU9n6YiGMphiHA1V9q3i4ZN0VPtgElSaI,AAMC--8/FlogHelper-v35.jar");
+					.loadedFrom("CHK@vk9NRGTCBqOzQs2S~PhlJCAf3uYmoMguNB5a5fx3wC4,bx8ewRk-OJPwXOj5P1PXUxuuK7ZxuNLHXsMJJH9xuVg,AAMC--8/FlogHelper.jar");
 			addPlugin("Sharesite")
 					.inGroup("communication")
-					.recommendedVersion(4)
+					.recommendedVersion(5)
 					.minimumVersion(2)
-					.loadedFrom("CHK@MktEdCJqSCG~5LaI9f~3xoQjejZCEVraQlfzKRs-H3I,yI2mQDrN1omHqD6ZibXDTRqnCK~2ut4Q11p18J1~cGE,AAMC--8/Sharesite-0.4.4.jar");
+					.loadedFrom("CHK@MDQlAV6EcyIvkomR~~YUx7YOS7BbicvAC9hpedmUlUw,rf3V7plsMOf650hNXOWqmF35dGs1LXRf3TiFOwdghyU,AAMC--8/Sharesite-0-4-8.jar");
 		} catch (MalformedURLException mue1) {
 			throw new RuntimeException("Could not create FreenetURI.", mue1);
 		}
